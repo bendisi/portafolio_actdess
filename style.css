@@ -23,29 +23,20 @@
   
   header {
     text-align: center;
-    padding: 40px 0;
+    padding: 90px 0;
     margin-left: 150px;
     margin-right: 150px;
     background: var(--fondo);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    background-image: url("assets/fondookok.jpg"); /* Ruta de tu imagen */
+    box-shadow: 0 2px 4px rgba(4, 4, 4, 0.1);
+    background-image: url("assets/fondo.jpg"); /* Ruta de tu imagen */
     background-size: cover;       /* Que la imagen cubra toda la pantalla */
-    background-position: center;  /* Centrada */
+    background-position:center;  /* Centrada */
     background-repeat: no-repeat; /* Que no se repita */
     background-attachment: fixed; /* Para que el fondo no se mueva al hacer scroll */
-    color: white;
+    color: rgb(6, 6, 6);
   }
   
-  header img {
-    width: 130px;
-    height: 130px;
-    margin-bottom: 15px;
-    object-fit: cover;
-    border: 1px solid var(--primario);
-    /* Solo dos esquinas redondeadas */
-    border-top-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-  }
+  
   
   header h1 {
     color: var(--primario);
@@ -57,10 +48,15 @@
     font-family: monospace;
     overflow: hidden;
     white-space: nowrap;
+    margin-left: 120px;
     border-right: 3px solid #000; /* Cursor */
     width: 0;
     animation: typing 3s steps(30, end) forwards, blink 0.7s step-end infinite;
   }
+  p.desarrllo{
+    margin-left: 320px;
+  }
+
   
   @keyframes typing {
     from {
@@ -83,6 +79,7 @@
   
   nav {
     margin-top: 15px;
+    margin-left: 320px;
   }
   
   nav a {
@@ -228,7 +225,7 @@
     display: flex;
     gap: 20px;
     font-size: 2rem;
-    margin-left: 330px;
+    margin-left: 490px;
   }
 
   .cv-btn {
@@ -326,3 +323,168 @@
     font-size: 0.8rem;
     border-radius: 999px;
   }
+
+
+
+
+
+
+  /* ===========================
+   📱 Estilos Responsivos
+   =========================== */
+
+/* Tablets (pantallas menores a 1024px) */
+@media (max-width: 1024px) {
+  header {
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 60px 0;
+    background-attachment: scroll; /* mejora rendimiento en móviles */
+  }
+
+  nav {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 10px;
+  }
+
+  .social-icons {
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  section {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .card-estudio {
+    width: 100%;
+  }
+
+  .container-estudios {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Smartphones (pantallas menores a 768px) */
+@media (max-width: 768px) {
+  body {
+    padding: 0 10px;
+  }
+
+  header {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 40px 20px;
+    background-position: center;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+    margin-left: 0;
+    border-right: none;
+    animation: none;
+    width: 100%;
+  }
+
+  p.desarrllo {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  nav {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  nav a {
+    display: block;
+    margin: 8px 0;
+  }
+
+  section {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .parrafo_sobremi {
+    font-size: 16px;
+    line-height: 22px;
+    text-align: justify;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .imgproyecto img,
+  .imgproyecto_crud img {
+    width: 100%;
+    height: auto;
+  }
+
+  .social-icons {
+    flex-direction: row;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin: 20px 0;
+  }
+
+  form {
+    padding: 15px;
+    width: 100%;
+  }
+
+  .card-estudio {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .card-estudio i {
+    font-size: 2rem;
+  }
+
+  footer {
+    font-size: 12px;
+  }
+}
+
+/* Pantallas muy pequeñas (menores a 480px) */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.3rem;
+  }
+
+  nav a {
+    font-size: 0.9rem;
+  }
+
+  .cv-btn {
+    font-size: 0.8rem;
+    padding: 10px 14px;
+  }
+
+  .card img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .card h3 {
+    font-size: 16px;
+  }
+}
+
+

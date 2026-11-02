@@ -1,0 +1,55 @@
+/* mejoras.css — estilos nuevos para el portafolio.
+   Se carga DESPUÉS de style.css y solo agrega reglas; no cambia las existentes. */
+
+/* Subtítulo bajo el nombre de cada proyecto */
+.subtitulo-proyecto {
+  margin: 0 0 12px;
+  font-size: 0.95rem;
+  opacity: 0.8;
+}
+
+/* Etiquetas de tecnologías (se adaptan a fondo claro u oscuro) */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 14px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tags li {
+  padding: 4px 12px;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  opacity: 0.9;
+}
+
+/* Enlaces de cada proyecto (código y video) */
+.enlaces-proyecto {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.enlaces-proyecto a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* Separación entre proyectos */
+article.proyecto {
+  margin-bottom: 32px;
+}
+
+/* Enlace de correo en Contacto */
+#contacto a[href^="mailto:"] {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}

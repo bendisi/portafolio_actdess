@@ -3,268 +3,336 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mi Portafolio</title>
+  <title>Benjamin Espinosa | Desarrollador de Software Junior</title>
+  <meta name="description" content="Portafolio de Benjamin Espinosa, tecnólogo en Desarrollo de Software: aplicaciones web con PHP y MySQL, automatización con Python y análisis de datos." />
+  <meta property="og:title" content="Benjamin Espinosa | Desarrollador de Software Junior" />
+  <meta property="og:description" content="Aplicaciones web con PHP y MySQL, automatización con Python y análisis de datos." />
+  <meta property="og:type" content="website" />
+
   <link rel="stylesheet" href="style.css" />
+  <!-- Estilos nuevos (etiquetas de tecnologías y enlaces de proyectos). Va después de style.css. -->
+  <link rel="stylesheet" href="mejoras.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <script defer src="script.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
-<br>
   <header>
-  <img src="" alt="">
+    <!-- Opcional: agrega tu foto en assets/foto.jpg y quita este comentario.
+    <img src="assets/foto.jpg" alt="Foto de Benjamin Espinosa" />
+    -->
     <h1>Hola, soy Benjamin Espinosa</h1>
-    <p class="desarrllo">Desarrollor de Software Junior</p>
-    <nav>
+    <!-- La clase conserva el nombre original "desarrllo" para que siga aplicando tu CSS -->
+    <p class="desarrllo">Desarrollador de Software Junior | Análisis de Datos</p>
+
+    <nav aria-label="Navegación principal">
       <a href="#sobre-mi">Sobre mí</a>
+      <a href="#habilidades">Habilidades</a>
       <a href="#proyectos">Proyectos</a>
+      <a href="#formacion">Formación</a>
       <a href="#contacto">Contacto</a>
     </nav>
+
     <div class="social-icons">
       <!-- LinkedIn -->
-      <a href="https://www.linkedin.com/in/benjam%C3%ADn-espinosa-a1b88529a/" target="_blank" aria-label="LinkedIn">
+      <a href="https://www.linkedin.com/in/benjam%C3%ADn-espinosa-a1b88529a/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
         <i class="fab fa-linkedin"></i>
       </a>
       <!-- GitHub -->
-      <a href="https://github.com/bendisi" class="github" target="_blank" aria-label="GitHub">
+      <a href="https://github.com/bendisi" class="github" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
         <i class="fab fa-github"></i>
       </a>
-      <a href="assets/Cv-dev.pdf" download class="cv-btn">
+      <!-- CV: reemplaza assets/Cv-dev.pdf por tu hoja de vida actualizada -->
+      <a href="assets/Cv_Dev_Junior.pdf" download class="cv-btn">
         <i class="fas fa-download"></i> Descargar CV
       </a>
     </div>
-    
   </header>
-  
+
+  <!-- ===================== SOBRE MÍ ===================== -->
   <section id="sobre-mi">
     <h2 class="color-banco">Sobre mí</h2>
     <p class="parrafo_sobremi">
-      Soy tecnólogo en Desarrollo de Software (último semestre en la UNAD) 
-      con 20 años de experiencia en el sector público como Soldado Profesional.
-      Me caracterizo por la disciplina, proactividad y compromiso 
-      con la mejora continua. Desarrollé habilidades de liderazgo, disciplina, 
-      trabajo en equipo y resolución de problemas. Experiencia en 
-      entornos exigentes con enfoque en responsabilidad y cumplimiento de 
-      objetivos.
-<br> <br>
-      <p class="parrafo_sobremi">
-        Apasionado por la tecnología y la creación de interfaces modernas, 
-        busco mi primera oportunidad como Desarrollador Junior para 
-        aplicar mis conocimientos en entornos reales y seguir creciendo 
-        profesionalmente.
-      </p>
-        <br>
-    <p class="parrafo_sobremi">En este momento, estoy enfocado en encontrar 
-      oportunidades laborales como Desarrollador Junior, con el objetivo de 
-      aplicar mis conocimientos y continuar mi desarrollo profesional como programador.</p>
-    <br>
-    <p class="parrafo_sobremi">Experiencia en proyectos académicos y personales con HTML, 
-      CSS, JavaScript, PHP, Python, MySQL y Android Studio. Me destaco 
-      por mi disciplina, adaptabilidad y capacidad de trabajo en equipo. 
-      </p>
-    <br>
-   
+      Soy tecnólogo en Desarrollo de Software (UNAD, opción de grado en curso) y llego al sector tecnológico
+      después de 20 años de servicio público, donde me formé en disciplina, manejo responsable de
+      información y cumplimiento de plazos.
+    </p>
+    <p class="parrafo_sobremi">
+      Desarrollo aplicaciones web con HTML, CSS, JavaScript, PHP y MySQL, y herramientas en Python que
+      automatizan tareas con datos y Excel. También tengo formación en análisis de datos (Talento Tech,
+      MinTIC) y en gestión documental (SENA).
+    </p>
+    <p class="parrafo_sobremi">
+      Busco una oportunidad laboral como desarrollador junior o en análisis de datos, para aplicar lo que
+      he construido dentro de un equipo real.
+    </p>
   </section>
 
-  <section id="proyectos">
-    <h2 class="color-banco">Habilidades Técnicas - Tecnologías</h2>
+  <!-- ===================== HABILIDADES ===================== -->
+  <section id="habilidades">
+    <h2 class="color-banco">Habilidades técnicas</h2>
+
+    <h3 class="color-banco">Lenguajes y desarrollo web</h3>
     <div class="container">
-      <!-- HTML -->
       <div class="card">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML logo">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="Logo de HTML" />
         <h3>HTML</h3>
       </div>
-
-      <!-- CSS -->
       <div class="card">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS logo">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="Logo de CSS" />
         <h3>CSS</h3>
       </div>
-
-      <!-- JavaScript -->
       <div class="card">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript logo">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="Logo de JavaScript" />
         <h3>JavaScript</h3>
       </div>
-
-     
-     <div class="container">
-        <!-- Python -->
       <div class="card">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python logo">
-        <h3>Python</h3>
-      </div>
-
-      <!-- PHP -->
-      <div class="card">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP logo">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="Logo de PHP" />
         <h3>PHP</h3>
       </div>
-        <!-- SQL -->
-        <div class="card">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL logo">
-          <h3>SQL</h3>
-        </div>
+      <div class="card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Logo de Python" />
+        <h3>Python</h3>
       </div>
-      
-       </section>
+      <div class="card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Logo de Bootstrap" />
+        <h3>Bootstrap</h3>
+      </div>
+    </div>
 
-  <section id="proyectos">
-    <h3 class="color-banco">Otros</h2>
-  <div class="container">
-        <!-- Excel avanzado -->
+    <h3 class="color-banco">Datos y herramientas</h3>
+    <div class="container">
       <div class="card">
-        <img src="https://cdn-icons-png.flaticon.com/512/732/732220.png" alt="Excel logo">
-        <h3>Excel-avanzado</h3>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="Logo de MySQL" />
+        <h3>MySQL</h3>
       </div>
-      <!-- Illustrator -->
       <div class="card">
-        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968472.png" alt="Adobe Illustrator logo">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Logo de Pandas" />
+        <h3>Pandas</h3>
+      </div>
+      <div class="card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Logo de Git" />
+        <h3>Git y GitHub</h3>
+      </div>
+    </div>
+
+    <h3 class="color-banco">Otros</h3>
+    <div class="container">
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/732/732220.png" alt="Logo de Excel" />
+        <h3>Excel avanzado</h3>
+      </div>
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968472.png" alt="Logo de Adobe Illustrator" />
         <h3>Illustrator</h3>
       </div>
-        <!-- Photoshop-->
       <div class="card">
-        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968520.png" alt="Adobe Photoshop logo">
+        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968520.png" alt="Logo de Adobe Photoshop" />
         <h3>Photoshop</h3>
       </div>
-  </div>
-
+    </div>
   </section>
- 
 
+  <!-- ===================== PROYECTOS ===================== -->
   <section id="proyectos">
-    <h2 class="color-banco" >Proyectos</h2>
-    <div class="proyecto">
-      <h3 class="color-banco" >Proyecto 1</h3>
-      <div class="imgproyecto">
-        
-        <img src="assets/porRes_pw.jpg" alt="Captura pantalla del proyecto restaurante">
-        <img src="assets/jesclientes_pw.jpg" alt="Captura pantalla del proyecto restaurante">
-        <img src="assets/index_pw.jpg" alt="Captura pantalla del proyecto restaurante">
-        
-      </div>
-      <p>El proyecto consiste en desarrollar una solución digital para un restaurante, 
-        que permita mostrar el menú a la carta y el menú del día, así como 
-        gestionar pedidos en línea. Además, incluye una sección informativa sobre 
-        los servicios ofrecidos —banquetes, bufetes y eventos— con soporte visual 
-        mediante fotografías.</p>
-        <br>
-        <p>El sistema incorpora una base de datos que facilita el registro, 
-          actualización y eliminación de información de los clientes.
-        </p>
-      <a href="https://youtu.be/wTxaWY6ZMek">Video en YouTube </a>
-    </div>
-    
-    <!-- Más proyectos aquí -->
-  
-    <div class="proyecto">
-      <h3>Proyecto 2</h3>
-      <div class="imgproyecto_crud">
-        <img src="assets/crud_empleados.jpg" alt="Captura pantalla proyecto CRUD">
-        <img src="assets/crud_editar.jpg" alt="Captura pantalla proyecto CRUD">
-        <img src="assets/crud_registrar_pw.jpg" alt="Captura pantalla proyecto CRUD">
-      </div>
-      <p>El proyecto consiste en el desarrollo de un sistema CRUD 
-        (Create, Read, Update, Delete),
-         que implementa las cuatro operaciones esenciales para la
-          gestión e interacción con datos en un entorno informático: crear, 
-          consultar, actualizar y eliminar registros..</p>
-      <a href="https://youtu.be/8ktmHTvc9d4">Video en YouTube</a> I
-      <a href="https://github.com/bendisi/crud_php.git">Ver codigo en Github</a>
-    </div>
+    <h2 class="color-banco">Proyectos</h2>
 
-    <div class="proyecto">
-      <h3>Proyecto 3</h3>
+    <!-- Proyecto: Tienda Barichara -->
+    <article class="proyecto">
+      <h3 class="color-banco">Tienda Barichara</h3>
+      <p class="subtitulo-proyecto">Sistema de gestión de ventas e inventario</p>
       <div class="imgproyecto_crud">
-        <img src="assets/barichara_menup.jpg" alt="Captura menu principal tienda Barichara">
-        <img src="assets/barichara_caja.jpg" alt="Captura pantalla caja registradora tienda Barichara">
-        <img src="assets/barichara_inventario.jpg" alt="Captura pantalla gestion de inventario tienda Barichara">
+        <img src="assets/barichara_menup.jpg" alt="Menú principal de Tienda Barichara" loading="lazy" />
+        <img src="assets/barichara_caja.jpg" alt="Pantalla de caja registradora de Tienda Barichara" loading="lazy" />
+        <img src="assets/barichara_inventario.jpg" alt="Pantalla de gestión de inventario de Tienda Barichara" loading="lazy" />
       </div>
-      <p>El proyecto Tienda Barichara es un sistema de gestión desarrollado para optimizar los procesos de ventas, 
-        inventario y administración interna del negocio. Está compuesto por varios módulos que trabajan 
-        de manera integrada para garantizar un flujo eficiente y ordenado de la información. ..</p>
-      
-      <a href="https://github.com/bendisi/crud_php.git">Ver codigo en Github</a>
-    </div>
-    
+      <p>
+        Sistema web para optimizar las ventas, el inventario y la administración interna de un negocio.
+        Está compuesto por módulos integrados (menú principal, caja registradora e inventario) que
+        mantienen la información ordenada y consistente.
+      </p>
+      <ul class="tags" aria-label="Tecnologías usadas">
+        <li>HTML</li><li>CSS</li><li>JavaScript</li><li>PHP</li><li>MySQL</li><li>Bootstrap</li>
+      </ul>
+      <div class="enlaces-proyecto">
+        <a href="https://github.com/bendisi/tienda_baricgara" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-github"></i> Ver código en GitHub
+        </a>
+      </div>
+    </article>
+
+    <!-- Proyecto: Aplicación web para restaurante -->
+    <article class="proyecto">
+      <h3 class="color-banco">Aplicación web para restaurante</h3>
+      <p class="subtitulo-proyecto">Menú digital, pedidos en línea y registro de clientes</p>
+      <div class="imgproyecto">
+        <img src="assets/porRes_pw.jpg" alt="Captura del proyecto restaurante: página principal de servicios" loading="lazy" />
+        <img src="assets/jesclientes_pw.jpg" alt="Captura del proyecto restaurante: gestión de clientes" loading="lazy" />
+        <img src="assets/index_pw.jpg" alt="Captura del proyecto restaurante: inicio" loading="lazy" />
+      </div>
+      <p>
+        Solución digital para un restaurante que muestra el menú a la carta y el menú del día, y permite
+        gestionar pedidos en línea. Incluye una sección informativa de servicios (banquetes, bufetes y
+        eventos) con fotografías.
+      </p>
+      <p>
+        Cuenta con una base de datos para registrar, actualizar y eliminar la información de los clientes.
+      </p>
+      <ul class="tags" aria-label="Tecnologías usadas">
+        <li>HTML</li><li>CSS</li><li>JavaScript</li><li>PHP</li><li>MySQL</li><li>Bootstrap</li>
+      </ul>
+      <div class="enlaces-proyecto">
+        <a href="https://github.com/bendisi/proyecto_web_restaurant" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-github"></i> Ver código en GitHub
+        </a>
+        <a href="https://youtu.be/wTxaWY6ZMek" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-youtube"></i> Ver video
+        </a>
+      </div>
+    </article>
+
+    <!-- Proyecto: CRUD -->
+    <article class="proyecto">
+      <h3 class="color-banco">Sistema CRUD de empleados</h3>
+      <p class="subtitulo-proyecto">Crear, consultar, actualizar y eliminar registros</p>
+      <div class="imgproyecto_crud">
+        <img src="assets/crud_empleados.jpg" alt="Listado de empleados en el sistema CRUD" loading="lazy" />
+        <img src="assets/crud_editar.jpg" alt="Formulario para editar un empleado en el sistema CRUD" loading="lazy" />
+        <img src="assets/crud_registrar_pw.jpg" alt="Formulario para registrar un empleado en el sistema CRUD" loading="lazy" />
+      </div>
+      <p>
+        Sistema CRUD (Create, Read, Update, Delete) que implementa las cuatro operaciones esenciales para
+        gestionar datos: crear, consultar, actualizar y eliminar registros en una base de datos relacional.
+      </p>
+      <ul class="tags" aria-label="Tecnologías usadas">
+        <li>HTML</li><li>CSS</li><li>JavaScript</li><li>PHP</li><li>MySQL</li><li>Bootstrap</li>
+      </ul>
+      <div class="enlaces-proyecto">
+        <a href="https://github.com/bendisi/crud_php" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-github"></i> Ver código en GitHub
+        </a>
+        <a href="https://youtu.be/8ktmHTvc9d4" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-youtube"></i> Ver video
+        </a>
+      </div>
+    </article>
+
+    <!-- Proyecto: Dictado por voz (Python) -->
+    <article class="proyecto">
+      <h3 class="color-banco">Dictado por voz con salida a Excel</h3>
+      <p class="subtitulo-proyecto">Aplicación de escritorio en Python</p>
+      <!-- Cuando tengas capturas, agrega aquí:
+      <div class="imgproyecto_crud">
+        <img src="assets/dictado_1.jpg" alt="Interfaz de la aplicación de dictado por voz" loading="lazy" />
+      </div>
+      -->
+      <p>
+        Aplicación de escritorio con interfaz moderna (CustomTkinter) que convierte el dictado por voz,
+        activado con el teclado, en texto estructurado. Automatiza la inserción y actualización de datos
+        en plantillas dinámicas de Excel.
+      </p>
+      <ul class="tags" aria-label="Tecnologías usadas">
+        <li>Python</li><li>CustomTkinter</li><li>Pandas</li><li>OpenPyXL</li><li>SpeechRecognition</li>
+      </ul>
+      <!-- Cuando subas el código, agrega aquí el enlace al repositorio:
+      <div class="enlaces-proyecto">
+        <a href="https://github.com/bendisi/NOMBRE_DEL_REPO" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-github"></i> Ver código en GitHub
+        </a>
+      </div>
+      -->
+    </article>
+
+    <!-- Proyecto: Análisis de datos (Python) -->
+    <article class="proyecto">
+      <h3 class="color-banco">Análisis y limpieza de datos con Python</h3>
+      <p class="subtitulo-proyecto">Notebook en Google Colab</p>
+      <p>
+        Flujos de análisis en Google Colab para filtrar, estructurar e imputar datos faltantes, y procesar
+        las variables clave para presentar la información de forma clara.
+      </p>
+      <ul class="tags" aria-label="Tecnologías usadas">
+        <li>Python</li><li>Pandas</li><li>Google Colab</li>
+      </ul>
+      <!-- Cuando publiques el notebook, agrega aquí su enlace (GitHub o Colab). -->
+    </article>
   </section>
 
-  <div id="mensaje-enviado" style="display: none; color: green; margin-top: 15px; text-align: center;">
-    ¡Gracias! Tu mensaje ha sido enviado.
-  </div>
+  <!-- ===================== FORMACIÓN ===================== -->
+  <section id="formacion" class="estudios-section">
+    <h2><i class="fas fa-graduation-cap"></i> Formación académica</h2>
 
-
-  <section class="estudios-section">
-    <h2><i class="fas fa-graduation-cap"></i> Formación Académica</h2>
-
-    <!-- Estudio en finalizado -->
     <div class="container-estudios">
       <div class="card-estudio">
-        <i class="fa-brands fa-pied-piper-hat"></i>
+        <i class="fas fa-folder-open"></i>
         <div class="card-content">
-          <div class="titulo">Tecnico en Gestion Documental</div>
+          <div class="titulo">Técnico en Gestión Documental</div>
           <div class="institucion">SENA - Servicio Nacional de Aprendizaje</div>
           <span class="estado" style="background: #4caf50; color: white;">Finalizado</span>
         </div>
       </div>
 
-      <!-- Estudio finalizado  -->
       <div class="card-estudio">
         <i class="fas fa-paint-brush"></i>
         <div class="card-content">
-          <div class="titulo">Técnico en Diseño Gráfico</div>
-          <div class="institucion">Fundación Educativa y Técnica hacia el Progreso Industrial</div>
+          <div class="titulo">Técnico en Artes Gráficas</div>
+          <div class="institucion">FUNDETEC - Bucaramanga</div>
           <span class="estado" style="background: #4caf50; color: white;">Finalizado</span>
         </div>
       </div>
-  </div>
-  <div class="container-estudios">
-        <!-- Estudio finalizado  -->
-          <div class="card-estudio">
-            <i class="fa-solid fa-file"></i>
-            <div class="card-content">
-              <div class="titulo">Analisis de Datos - intermedio</div>
-              <div class="institucion">Talento TECH Oriente</div>
-              <span class="estado" style="background: #4caf50; color: white;">Finalizado</span>
-            </div>
-        </div>
+    </div>
 
-        <div class="card-estudio">
-          <i class="fa-solid fa-house"></i>
-          <div class="card-content">
-            <div class="titulo">Gestión de la comunicación interna en las organizaciones</div>
-            <div class="institucion">Universidad Autonoma de Barcelona</div>
-            <span class="estado" style="background: #4caf50; color: white;">Finalizado</span>
-          </div>
+    <div class="container-estudios">
+      <div class="card-estudio">
+        <i class="fas fa-chart-column"></i>
+        <div class="card-content">
+          <div class="titulo">Análisis de Datos - Nivel intermedio</div>
+          <div class="institucion">Talento Tech Oriente - MinTIC</div>
+          <span class="estado" style="background: #4caf50; color: white;">Finalizado</span>
         </div>
+      </div>
 
-        <!-- Estudio en proceso -->
-        <div class="card-estudio">
-          <i class="fa-solid fa-house"></i>
-          <div class="card-content">
-            <div class="titulo">Tecnología en Desarrollo de Software</div>
-            <div class="institucion">Universidad Nacional Abierta y a Distancia</div>
-            <span class="estado">En curso (Ultimo semestre)</span>
-          </div>
+      <div class="card-estudio">
+        <i class="fas fa-comments"></i>
+        <div class="card-content">
+          <div class="titulo">Gestión de la comunicación interna en las organizaciones</div>
+          <div class="institucion">Universidad Autónoma de Barcelona</div>
+          <span class="estado" style="background: #4caf50; color: white;">Finalizado</span>
         </div>
-              </div>
+      </div>
+
+      <div class="card-estudio">
+        <i class="fas fa-code"></i>
+        <div class="card-content">
+          <div class="titulo">Tecnología en Desarrollo de Software</div>
+          <div class="institucion">Universidad Nacional Abierta y a Distancia (UNAD)</div>
+          <span class="estado">En curso (último semestre)</span>
+        </div>
+      </div>
+    </div>
   </section>
 
+  <!-- ===================== CONTACTO ===================== -->
   <section id="contacto">
-    
     <h2 class="color-banco">Contacto</h2>
+    <p class="parrafo_sobremi">
+      También puedes escribirme a
+      <a href="mailto:carlosan705@gmail.com">carlosan705@gmail.com</a>.
+    </p>
     <form action="https://formspree.io/f/mgvapwao" method="POST">
-        <input type="text" name="nombre" placeholder="Tu nombre" required />
-        <input type="email" name="email" placeholder="Tu email" required />
-        <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
-        <button type="submit">Enviar</button>
+      <input type="text" name="nombre" placeholder="Tu nombre" aria-label="Tu nombre" autocomplete="name" required />
+      <input type="email" name="email" placeholder="Tu email" aria-label="Tu email" autocomplete="email" required />
+      <textarea name="mensaje" placeholder="Tu mensaje" aria-label="Tu mensaje" required></textarea>
+      <button type="submit">Enviar</button>
     </form>
-
-    
+    <!-- Mensaje de confirmación (lo usa script.js). Mantén el id. -->
+    <div id="mensaje-enviado" style="display: none; color: green; margin-top: 15px; text-align: center;">
+      ¡Gracias! Tu mensaje ha sido enviado.
+    </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Benjamin-Espinosa</p>
+    <p>&copy; 2026 Benjamin Espinosa Pérez</p>
   </footer>
 </body>
 </html>
